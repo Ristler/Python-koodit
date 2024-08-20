@@ -1,3 +1,7 @@
-user = input("Anna nimesi: ")
+import math
 
-print("Terve, " + user + "!")
+sade_str = input("Kerro säde: ")
+sade = float(sade_str)
+vastaus = (math.pi * sade * sade)
+
+print('Pinta-ala on:',round(vastaus))
