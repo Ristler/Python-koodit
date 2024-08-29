@@ -2,7 +2,6 @@
 from random import randint
 
 oikein = randint(1, 10)
-print("Oikea vastaus: ", oikein)
 userInput = int(input("Arpapeli!: "))
 
 while userInput != oikein:
