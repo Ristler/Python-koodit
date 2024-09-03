@@ -5,7 +5,6 @@ for _ in range(1, 6):
     kaupunki.append(userInput)
 
 for city in kaupunki:
-    print("")
     print(city)
 
 
