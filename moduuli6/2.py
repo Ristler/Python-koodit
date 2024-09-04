@@ -1,14 +1,13 @@
 from random import randint
 
+numero = 0
+userInput = int(input("Nopan maksimisilmäluku: "))
 
-userInput = input(int("Nopan maksimisilmäluku: "))
-
-
-def noppa(tahkojenmaara):
-    random = randint(1, 21)
+def noppa(x):
+    random = randint(1, x)
     return random
 
-while numero != 6:
-    numero = noppa()
+while numero != userInput:
+    numero = noppa(21)
     print(numero)
 
