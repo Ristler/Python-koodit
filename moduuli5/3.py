@@ -1,12 +1,22 @@
 
-userInput = int(input("Anna luku: "))
+on = "On alkuluku"
+ei = "Ei ole alkuluku"
+
+while True:
+    userInput = int(input("Anna luku: "))
+    for i in range(2, userInput):
+
+        if userInput % i == 0:
+            print(ei)
+            break
+    else:
+        if userInput < 2:
+            print(ei)
+        else:
+            print(on)
 
 
-for _ in range(2, userInput):
-    if userInput % 1 == 0 and userInput % userInput == 0:
-        print("On alkuluku")
-else:
-    print("Ei ole")
+
 
 
 
