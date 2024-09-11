@@ -1,7 +1,7 @@
 
 def neworold (name):
     if name in nimet:
-        print("Vanha nimi")
+        print("Aiemmin syötetty nimi")
     elif name not in nimet:
         print("Uusi nimi")
     return
