@@ -39,7 +39,7 @@ class Kilpailu:
                 auto.kiihdytä(random.randint(-10, 15))
                 auto.kulje(1)
             tunti+=1
-            if tunti == 10:
+            if tunti % 10 == 0:
                 self.tulosta_tilanne()
             if self.kilpailu_ohi() == True:
                 return
