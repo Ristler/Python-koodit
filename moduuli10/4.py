@@ -33,13 +33,16 @@ class Kilpailu:
         self.autot = autot
 
     def tunti_kuluu(self):
+        tunti = 0
         while True:
             for auto in autot:
                 auto.kiihdytä(random.randint(-10, 15))
                 auto.kulje(1)
+            tunti+=1
+            if tunti % 10 == 0:
                 self.tulosta_tilanne()
-                if self.kilpailu_ohi() == True:
-                    return
+            if self.kilpailu_ohi() == True:
+                return
 
     def kilpailu_ohi(self):
         for auto in self.autot:
@@ -61,6 +64,4 @@ class Kilpailu:
 romuralli = Kilpailu("Suuri romuralli", 8000, autot)
 romuralli.tunti_kuluu()
 romuralli.tulosta_tilanne()
-
-
 

@@ -1,7 +1,6 @@
 import mysql.connector
 
 
-
 def getAirport(code):
     sql = f"SELECT ident, name FROM airport where ident='{code}'"
 
